@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bulb Toggle</title>
+</head>
+<body>
+
+
+    <img id="bulb"
+         src="https://www.w3schools.com/js/pic_bulboff.gif"
+         width="150">
+
+    <br><br>
+
+    <button id="toggleBtn">Turn ON</button>
+
+    <script>
+
+        let isOn = false;
+
+        document.getElementById("toggleBtn")
+        .addEventListener("click", function() {
+
+            let bulb = document.getElementById("bulb");
+            let btn = document.getElementById("toggleBtn");
+
+            if (isOn == false) {
+                bulb.src ="https://www.w3schools.com/js/pic_bulbon.gif";
+                btn.innerHTML = "Turn OFF";
+                isOn = true;
+            }
+            else {
+                bulb.src ="https://www.w3schools.com/js/pic_bulboff.gif";
+                btn.innerHTML = "Turn ON";
+                isOn = false;
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>
