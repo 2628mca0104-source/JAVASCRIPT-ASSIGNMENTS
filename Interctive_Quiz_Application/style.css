@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+html {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 15px;
+}
+
+#question {
+    color: #2c3e50;
+    font-size: 22px;
+    margin: 25px 0;
+    font-weight: 600;
+    min-height: 60px; /* Prevents layout jump if question is short */
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+/* Styling for the option buttons that your JavaScript will generate inside #options */
+#options button {
+    background-color: #f8f9fa;
+    border: 2px solid #e9ecef;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #495057;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+#options button:hover {
+    background-color: #667eea;
+    border-color: #667eea;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(102, 126, 234, 0.2);
+}
+
+/* Bottom Action Buttons (Next, Restart) */
+body > button {
+    background-color: #4caf50; /* Green for Next */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin: 5px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    font-family: 'Poppins', sans-serif;
+}
+
+body > button:nth-of-type(2) {
+    background-color: #f44336; /* Red for Restart */
+}
+
+body > button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+#result {
+    margin-top: 25px;
+    font-size: 20px;
+    color: #28a745;
+    font-weight: 600;
+}

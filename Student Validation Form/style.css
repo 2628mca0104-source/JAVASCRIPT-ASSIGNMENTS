@@ -1,0 +1,194 @@
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+     flex-direction: column; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 15px;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a, #4338ca);
+    background-attachment: fixed;
+}
+
+/* Form Container */
+form {
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.97);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 22px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.7s ease;
+}
+
+/* Heading */
+h1 {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 25px;
+    color: white;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Labels */
+label {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #1e293b;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Text, Email, Number and Password Inputs */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+select {
+    width: 100%;
+    height: 48px;
+    padding: 0 15px;
+    margin-top: 5px;
+    border: 1.5px solid #dbe3ef;
+    border-radius: 10px;
+    background: #f8fafc;
+    color: #1e293b;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Placeholder */
+input::placeholder {
+    color: #94a3b8;
+}
+
+/* Input Focus Effect */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border-color: #4f46e5;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.12);
+}
+
+/* Radio Buttons and Checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+    accent-color: #4f46e5;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+/* Radio and Checkbox Text */
+form {
+    line-height: 1.7;
+}
+
+/* Space Between Form Sections */
+form br {
+    display: block;
+    content: "";
+    margin-bottom: 8px;
+}
+
+/* Select Dropdown */
+select {
+    cursor: pointer;
+}
+
+/* Terms and Conditions */
+input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+/* Register Button */
+button {
+    width: 100%;
+    height: 52px;
+    margin-top: 18px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: white;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(79, 70, 229, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* Button Hover */
+button:hover {
+    background: linear-gradient(135deg, #4338ca, #6d28d9);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(79, 70, 229, 0.4);
+}
+
+/* Button Click */
+button:active {
+    transform: scale(0.98);
+}
+
+/* Entrance Animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    form {
+        padding: 25px 20px;
+        border-radius: 16px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    select {
+        height: 45px;
+    }
+}
+
